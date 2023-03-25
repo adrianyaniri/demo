@@ -1,4 +1,4 @@
-package com.example.demo.service.empleado
+package com.example.demo.service
 
 import com.example.demo.dto.EmpleadoDto
 import org.springframework.http.ResponseEntity

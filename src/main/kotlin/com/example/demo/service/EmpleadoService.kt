@@ -1,4 +1,4 @@
-package com.example.demo.service.empleado
+package com.example.demo.service
 
 import com.example.demo.dto.EmpleadoDto
 import com.example.demo.mappers.EmpleadoMapper
@@ -13,7 +13,7 @@ abstract class EmpleadoService(
     @Autowired
     private val empleadoRepository: EmpleadoRepository,
 
-    ) : IEmpleadoService{
+    ) : IEmpleadoService {
 
     override fun findAll(): List<EmpleadoDto> {
         return empleadoRepository.findAll().map { EmpleadoMapper.EmpleadoDto(it) }
