@@ -9,7 +9,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 class DemoApplication
 
 fun main(args: Array<String>) {
-
     runApplication<DemoApplication>(*args)
-    System.getenv("POSTGRES_PASSWORD")
 }
