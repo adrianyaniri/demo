@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  despensa_pg:
+    image: postgres:9.6
+    container_name: demo_kotlin
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      #- ./db/data/postgres:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
