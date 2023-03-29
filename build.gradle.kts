@@ -18,15 +18,16 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    //implementation("org.springframework.boot:spring-boot-starter-validation")
-    //implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
-    //implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.security:spring-security-crypto:6.0.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.hibernate:hibernate-core:6.1.7.Final")
+    implementation("org.hibernate.validator:hibernate-validator:8.0.0.Final")
+
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
 }
